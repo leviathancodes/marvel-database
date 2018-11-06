@@ -7,17 +7,13 @@ var mainScript = (function() {
     var httpRequest;
     var newChar = document.getElementById('search');
     document.getElementById('submit').addEventListener("click", charRequest);
-    document.getElementById('submit').addEventListener("onkeydown", handleEnter);
+    document.addEventListener("keydown", function(e) {
+        console.log(e.keyCode)
+        if (e.keyCode === 13) {
+            charRequest();
+        } 
+    });
 
-        // Pressing "Enter" does this
-        function handleEnter() {
-            var key = e.keyCode;
-            console.log(key);
-            if (key==13){
-                charRequest();
-             }
-        }
-    
         // Update Character (search)
     function characterSelect() {
         let search = document.getElementById('search').value;

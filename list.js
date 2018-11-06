@@ -11,6 +11,13 @@ var listScript = (function() {
     document.getElementById('btnRight').addEventListener("click", next);
     document.getElementById('btnLeft').addEventListener("click", previous);
     listRequest();
+    document.addEventListener("keydown", function(e) {
+        if (e.keyCode === 37) {
+            previous();
+        } else if (e.keyCode === 39) {
+            next();
+        }
+    });
 
     // Generates next 15 entries of characters
     function next() { 
