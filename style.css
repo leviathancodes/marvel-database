@@ -1,0 +1,15 @@
+img {
+    width: 30%;
+}
+.hide {
+    visibility: hidden;
+}
+li{
+    cursor: pointer;
+}
+li:hover {
+    color: blue;
+}
+.title{
+    font-family: 'Marvel', sans-serif;
+}

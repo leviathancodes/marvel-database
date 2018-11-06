@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Marvel Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Marvel" rel="stylesheet">
+
+</head>
+<body>
+    <h1 class="title">MARVEL DATABASE</h1>
+    <div id="charCard" class="card" style="width: 50vh;">
+        <img class="card-img-top" id="hero-image" src="" alt="Card image cap">
+        <h1 class="text-center card-title" id='title'></h1>
+            <div class="card-body">
+                <p class="desc card-text" id="desc"></p>  
+            </div>
+            <div class="card-footer text-muted" id='last-modified'>
+
+            </div>
+    </div>
+    <div id="errorMessage"></div>
+    <div id="divList"></div>
+        <input type="text" placeholder="Search.." id="search" autocomplete="off" onkeypress="handleEnter()">
+        <input type="button" value="Submit" id="submit"> 
+    <button type="button" class="btn-primary" id='btnLeft'><i class="fa fa-angle-left"></i></button>
+
+    <button type="button" class="btn-primary" id='btnRight'><i class="fa fa-angle-right"></i></button>
+    <ul class="pagination"></ul>
+    <script src="node_modules/bootstrap/dist/css/bootstrap.min.css"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="list.js"></script>
+</body>
+</html>
